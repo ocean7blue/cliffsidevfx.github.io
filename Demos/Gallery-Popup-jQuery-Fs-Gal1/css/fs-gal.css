@@ -1,0 +1,190 @@
+/**
+ * Author: Tim Vervoort - info@timvervoort.com
+ * Licence: Free for commercial use
+ * Last update: 8th November 2017 - v1.0
+ */
+/*.container{
+  border:solid 2px red;
+}*/
+body{
+  background-color: black;
+}
+#wrapper{max-width:1020px; margin:auto;
+}
+
+#menu, #menu ul {/* Reset the default ul styles */
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+#menu {         /* Background */
+    width: 960px;
+    border:1px solid #222;
+    background-color: #111;
+    border-radius:2px;
+    margin: auto;
+    /* box-shadow: 0 1px 1px #777;*/
+}
+#menu ul li{ background-color: #111;
+  transition: all .2s ease-in-out;}
+#menu:before, /* Clearing the floats*/
+#menu:after {
+    content: "";
+    display: table;}
+
+#menu:after {
+    clear: both;}
+/*#menu {
+    zoom:1;
+}*/
+
+/* End Clearing the floats*/
+
+#menu li{ /* Menu list*/
+float:left;
+width:239px;
+height:40px;
+line-height:40px;
+position: relative;
+border-right:1px solid #222;
+
+
+}
+
+#menu li a {/* Menu list "text" (a"anchor")link*/
+
+font-size:20px;
+font-family:"Times New Roman", Times, serif;
+color:white;
+text-decoration:none;
+text-align:center;
+display:block;
+}
+#menu li:hover > a {
+    color: red;
+}
+
+  ul li ul li {
+  display:none;}
+  
+  ul li:hover ul li {
+  display:block;
+  
+}
+#menuc{position: relative;
+  width:1020px;
+  height: 90px;
+  float:left;
+  margin-top:20px;
+  background-color: blue;
+}
+
+
+
+
+
+.list{
+  margin:auto;
+  padding: auto;
+  clear:left;
+}
+.list li{
+  float: left;
+  display: inline-block;
+  width: 24%;
+  color: red;
+  background-color: blue;
+  margin:2px;
+  height: 300px;
+  position:relative;
+    
+}
+.list img{
+  position: absolute;
+  /*transform:translate(-50%,-20%)*/
+  /*width:100%;*/
+  margin:auto;
+  left:7%;
+  width:85%;
+  top:5%;
+
+}
+.list p{position: absolute;
+  margin:auto;
+  padding:auto;
+  left:7px;
+  top:200px; 
+  text-align:left;
+  float:left;
+  font-size:30px;
+  line-height:30px;
+  
+}
+.fs-gal {/*class for images*/
+        margin:8px;
+        display:inline-block; 
+        border:solid 2px red;
+        width:23%;
+        
+        
+}
+.fs-gal:hover {
+/*border-radius: 2px;*/
+border-color: white;
+/*box-shadow: 10px 10px 5px grey;*/
+}
+.fs-gal-view { /*when image is open  */
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-size: contain;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+.fs-gal-view h1 {/*section for text*/
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width:50%;
+  min-width: 20%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  line-height: 50px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-weight:300;
+  font-size: 26px;
+}
+.fs-gal-prev, .fs-gal-next, .fs-gal-close {
+  position: absolute;
+  top: calc(50vh - 20px);
+  height: 40px;
+  width: 40px;
+}
+.fs-gal-prev {
+  left: 0;
+}
+.fs-gal-next {
+  right: 0;
+}
+.fs-gal-close {
+  top: 4px;
+  right: 4px;
+  height: 30px;
+  width: 30px;
+}
+.fs-gal:hover, .fs-gal-nav:hover, .fs-gal-close:hover {
+  cursor: pointer;
+}
