@@ -7,7 +7,6 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script src="scripts/jquery-3.3.1.min.js"></script>
-
 <script>
 $(document).ready(function(){
 	var slides= $('.slideShow>li');
@@ -23,7 +22,7 @@ $(document).ready(function(){
 			slideCache[slideCount].onload =
 			function(){
 			slideCount++;
-			slides.eq(slideCount).fadeIn(1000).delay(2000).fadeOut(1000);
+			slides.eq(slideCount).fadeIn(1000).delay(3000).fadeOut(1000);
 			preloader();
 			}
 	} else {
@@ -35,7 +34,7 @@ $(document).ready(function(){
 
  function slideShow(){
 	 //your code goes here
-	 slides.eq(slideCount).fadeIn(1000).delay(2000).fadeOut(1000, function(){slideCount < totalSlides -1? 
+	 slides.eq(slideCount).fadeIn(1000).delay(3000).fadeOut(1000, function(){slideCount < totalSlides -1? 
 	 slideCount++ : slideCount = 0;
 	 slideShow();
  	});
@@ -48,8 +47,9 @@ $(document).ready(function(){
 <div id="wrapper">
 
     <header id="header">
-
+    	<h1> Cliffside Vfx </h1>; 
     </header>
+ 
  <div id="menucontainer">
 	<ul id="menu">
         <li><a href="index.html"/>Home</a></li>
@@ -66,10 +66,10 @@ $(document).ready(function(){
 
     <div class="slideshowcontainer">
 		<ul class="slideShow">
-    	<li><img src="images/Bedroom_Daylight.jpg" style='width:100%;height:auto;'></li>
-        <li><img src="images/IMG_0544.JPG" style='width:100%;height:auto;'>/></li>
- 		<li><img src="images/IMG_0981.JPG" style='width:100%;height:auto;'></li>
-        <li><img src="images/nat.jpg" style='width:100%;height:auto;'></li>
+    		<li><img src="images/Bedroom_Daylight.jpg" style='width:100%'></li>
+        	<li><img src="images/mid-day.jpg" style='width:100%;'/></li>
+ 			<li><img src="images/wpark.jpg" style=;></li>
+        	<li><img src="images/moon.jpg" style='width:100%;'></li>
        </ul>
      </div>
 

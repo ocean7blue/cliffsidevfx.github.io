@@ -7,11 +7,23 @@ body{background:radial-gradient(gray 10%,black);}
 #header{
 	width:100%;
 	height:200px;
-	background-image:url(../images/nat.jpg);   
+	background-image:url(../images/IMG_0442_small.jpg);   
 	background-repeat:no-repeat;
 	background-position:center;
 	border:solid 3px white;
 
+}
+
+#header h1{
+	font-size: 48px;
+	color:rgba(0,128,128,1);
+	text-decoration: underline;
+	text-align: right;
+	margin: 0px;
+	padding-right: 20px;
+	letter-spacing: 2px;
+	 text-shadow: 2px 2px 3px orange;
+	 font-family:Times New Roman, sans-serif;
 }
 #menu, #menu ul {/* Reset the default ul styles */
     margin:0;
@@ -90,12 +102,15 @@ border-right: solid 1px gray;
 	float:left;
 	border:solid 2px;
 }
+
 .slideshowcontainer .slideShow{
 
 		list-style:none;
 		padding:0px;
-		margin:0px;
-
+		margin:auto;
+	transform:translate(0px,-100px);
+		
+		
 		}
 
 #menucontainer{
